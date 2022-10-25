@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class TestAutomatico {
 
     @Test
-    void testSuma(int a, int b) {
+    void testSuma() {
         assertEquals(5, Matematicas.suma(2,3));
     }
 }
