@@ -43,7 +43,12 @@ public class Cuenta {
     }
 
 
-    public void retirar(double x) {
+    public void retirar(double x) throws Exception{
+        
+        if(this.saldo - x < -500) {
+            throw new Exception("Operacion no permitida");
+        }
+        
         this.saldo -= x;
     }
 }
