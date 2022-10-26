@@ -17,7 +17,8 @@ class TestCuentas {
     void test() {
         
         cuenta1.retirar(100);
-        assertEquals(-250, cuenta1.getSaldo());
+        //assertEquals(-250, cuenta1.getSaldo());
+        assertEquals(50, cuenta1.getSaldo());
     }
 
 }
