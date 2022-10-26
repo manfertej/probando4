@@ -37,6 +37,13 @@ public class Cuenta {
 
 
 
-    public void ingresar(double x) {}
-    public void retirar(double x) {}
+    public void ingresar(double x) {
+
+        this.saldo += x;
+    }
+
+
+    public void retirar(double x) {
+        this.saldo -= x;
+    }
 }
