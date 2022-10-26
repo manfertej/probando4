@@ -1,11 +1,10 @@
-package principal;
 
-import java.util.List;
+package principal;
 
 public class Cuenta { 
     String mNumero; 
     String nTitular; 
-    List <Movimiento> mMovimientos;
+    //List <Movimiento> mMovimientos;
     double saldo;
     
     public Cuenta(String numero, String titular, double saldoInicial) {
@@ -38,15 +37,6 @@ public class Cuenta {
 
 
 
-    public void ingresar(double x) {
-        this.saldo += x; 
-    }
-    public void retirar(double x) throws Exception {
-        
-        if (this.saldo - x < -500) {
-            return;
-        }
-        
-        this.saldo -= x;
-    }
+    public void ingresar(double x) {}
+    public void retirar(double x) {}
 }
